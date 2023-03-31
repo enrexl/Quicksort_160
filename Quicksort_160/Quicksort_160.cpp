@@ -19,8 +19,8 @@ void input() {
     }
 
     cout << "\n=====================" << endl;
-    cout << "\n Enter Array Element" << endl;
-    cout << "\n=====================" << endl;
+    cout << " Enter Array Element" << endl;
+    cout << "=====================" << endl;
 
     for (int i = 0; i < n; i++) {
         cout << "<" << (i + 1) << ">";
@@ -45,7 +45,7 @@ void q_sort(int low, int high) {
     //Other containing element greater than pivot
     i = low + 1; //Langkah 3
     j = high; // Langkah 4
-    pivot = arr[low] //Langkah 2
+    pivot = arr[low]; //Langkah 2
 
         while (i <= j) { //langkah 10
             //search for an element greater than pivot
@@ -54,7 +54,7 @@ void q_sort(int low, int high) {
                 cmp_count++;
 
            }
-            cmp_count++
+            cmp_count++;
             // search for an element less than or equal to pivot
                 while ((arr[j] > pivot) && (j >= low)) { //langkah 7
                     j--;
@@ -83,7 +83,7 @@ void q_sort(int low, int high) {
 void display() {
     cout << "\n==============" << endl;
     cout << "=Sorted Array=" << endl;
-    cout << "\n==============" << endl;
+    cout << "==============" << endl;
 
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
