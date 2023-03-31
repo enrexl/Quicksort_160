@@ -96,6 +96,11 @@ void display() {
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    input();
+    q_sort(0, n - 1);
+    display();
+    system("pause");
+
+    return 0;
 }
 
