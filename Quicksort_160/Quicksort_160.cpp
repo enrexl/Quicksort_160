@@ -80,6 +80,20 @@ void q_sort(int low, int high) {
         q_sort(j + 1, high); //langkah 13
 }
 
+void display() {
+    cout << "\n==============" << endl;
+    cout << "=Sorted Array=" << endl;
+    cout << "\n==============" << endl;
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    cout << "\n\nNumber of comparison :" << cmp_count << endl;
+    cout << "Number of data movements :" << mov_count << endl;
+
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
